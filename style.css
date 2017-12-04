@@ -1,0 +1,101 @@
+/*
+Theme Name: Meteor Child Theme
+Theme URI: https://www.vladimir-simovic.de
+Author: Vladimir Simović
+Author URI: https://www.vladimir-simovic.de
+Description: angepasstes Child-Theme.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: meteor
+Domain Path: /languages/
+Template: meteor
+Tags: two-columns, featured-image-header, featured-images, theme-options, custom-background, custom-colors, custom-menu, editor-style, featured-images, theme-options, translation-ready, e-commerce, footer-widgets, full-width-template
+
+(C) 2016 Array, Inc.
+*/
+
+/*
+Hier kannst du dein eigenes CSS einfügen.
+
+Klicke auf das Hilfe-Symbol oben, um mehr zu lernen.
+*/
+
+/* Akzent-Farbe anpassen */
+button, input[type="button"], input[type="submit"], .button, .page-navigation .current, .page-numbers:hover, #page #infinite-handle button, #page #infinite-handle button:hover, .comment-navigation a, .su-button, .mobile-navigation, .toggle-active {
+    background-color: #07a;
+}
+h2 a:hover {color: #07a;}
+/* / Akzent-Farbe anpassen */
+
+
+body {background: rgba(0, 119, 170, 0.07);}
+
+blockquote {font-size: 22px;}
+
+article .entry-content a {color: #07a; box-shadow: inset 0 -1px 0 #ddd; transition: .4s ease;}
+article .entry-content a:hover {color: #07a; box-shadow: inset 0 -2px 0 #07a;}
+
+article a.author-profile-avatar, article a.author-profile-avatar:hover {color: #fff; box-shadow: none;}
+
+article .shariff a:hover, nav .nav-links a, nav .nav-links a:hover {box-shadow: none; color: inherit;}
+
+a.custom-logo-link {float: left; margin-right: 1.25rem;}
+img.custom-logo {border: 1px solid #ddd; border-radius: 28px;}
+
+.titles-wrap {display: inline-block; margin-top: 3px;}
+
+.site-title a {color: #07a;}
+.site-title a:hover {color: inherit;}
+
+.site-description {font-size: 15px;}
+
+@media (min-width: 601px) {
+.entry-header .entry-title {font-size: 40px;}
+.header-text h1 {font-size: 50px;}
+}
+
+.textwidget a {color: #07a;}
+
+@media (min-width: 1050px) {
+.container {padding: 0 2px; width: 1000px;}
+#primary {width: 700px; max-width: 700px;}
+.page-template-template-full-width #primary {width: 100%; max-width: 100%;}
+.widget-area {width: 250px;}
+}
+
+@media (min-width: 1090px) {
+.container {padding: 0 2px; width: 1045px;}
+.widget-area {width: 275px;}
+}
+
+small {font-size: 14px;}
+
+dfn {border-bottom: 1px dotted #999; cursor: help;}
+
+q:before {content: open-quote;}
+q:after{content: close-quote;}
+q {quotes:"\201E" "\201C";}
+
+.hinweis {background: #dce1e6; border-radius: 5px; padding: 2px 12px;}
+
+ul.hinweis, ol.hinweis {margin-left: 0; padding: 12px 12px 2px 27px;}
+
+
+/* Grid-Ansicht auf der Start- und den Übersichtsseiten */
+@media (min-width: 700px) {
+/*.blog #post-wrap {display: grid; grid-template-columns: 47% 47%; grid-gap: 0 5%;}*/
+
+.blog .entry-title, .archive .entry-title {font-size: 20px; font-weight: 600;}
+.blog h2, .archive h2 {font-size: 18px; font-weight: 500;}
+.blog .post, .blog .post:not(:last-of-type),
+.archive #post-wrap .post, .archive .post:not(:last-of-type) {background: #fff; border-bottom: none !important;  padding-bottom: 1px; margin-bottom: 5%;}
+.blog .post-content, .archive .post-content {padding: 0 4%;}
+.blog .entry-content, .archive .entry-content {font-size: 17px;}
+
+/*.blog #post-wrap, .archive #post-wrap {-moz-column-count: 2; -webkit-column-count: 2; column-count: 2;}
+.blog article {width: 48%; vertical-align: top;}  */
+.blog #post-wrap, .archive #post-wrap {display: flex; flex-wrap: wrap; justify-content:space-between;}
+.blog article, .archive article {width:48%; margin-bottom: 25px !important; box-shadow: 0 5px 35px rgba(50, 50, 93, 0.1), 0 0px 5px rgba(0, 0, 0, 0.07);}
+.blog article .featured-image, .archive article .featured-image {border-bottom: 3px solid #f3f3f3;}  
+}
